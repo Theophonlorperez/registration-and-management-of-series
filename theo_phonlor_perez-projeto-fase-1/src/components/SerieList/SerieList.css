@@ -1,0 +1,90 @@
+.serie-list-container {
+  padding: 40px;
+  text-align: center;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+.serie-list-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #e50914; 
+}
+
+.serie-list-empty {
+  font-size: 1.2rem;
+  color: #aaa;
+}
+
+.serie-list-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px; 
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.serie-card {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between; 
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.serie-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.7);
+}
+
+.serie-info {
+  text-align: left;
+  line-height: 1.6;
+  margin-bottom: 15px; 
+}
+
+.serie-info strong {
+  font-size: 1.2rem;
+  color: #fff;
+  display: block;
+  margin-bottom: 8px;
+}
+
+
+.serie-actions {
+  display: flex;
+  justify-content: flex-end; 
+  gap: 10px;
+}
+
+.serie-delete-btn,
+.serie-edit-btn {
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.serie-delete-btn {
+  background-color: #e50914;
+}
+
+.serie-delete-btn:hover {
+  background-color: #570000;
+  transform: scale(1.05);
+}
+
+.serie-edit-btn {
+  background-color: #e50914; 
+}
+
+.serie-edit-btn:hover {
+  background-color: #570000;
+  transform: scale(1.05);
+}
