@@ -184,29 +184,29 @@ Responsável por:
 ###  Página Inicial
 
 
-![Página Home](prints/home.png)
+![Página Home](home.png)
 
 ###  Página Sobre
 
 
-![Página Sobre](prints/sobre.png)
+![Página Sobre](sobre.png)
 
 
 ###  Página de Cadastro
 
 
-![Página Cadastro](prints/form.png)
+![Página Cadastro](form.png)
 
 
 ###  Página de Listagem
 
 
-![Página Lista](prints/serielistt.png)
+![Página Lista](serielistt.png)
 
 ### Mostrando funcionalidade da edição
 
 
-![Tela de edição](prints/edit.png)
+![Tela de edição](edit.png)
 
 
 ---
