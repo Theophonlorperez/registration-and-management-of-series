@@ -1,37 +1,40 @@
-#  Projeto de Cadastro e Lista de Séries
+#  Series Registration and Management Project
 
-##  Identificação
+##  Identification
 
-* **Aluno:** Theo Phonlor Perez
-* **Projeto:** Fase 1 - Cadastro e Gerenciamento de Séries
-* **Disciplina:** Desenvolvimento Frontend
-
----
-
-##  Introdução
-
-Este projeto consiste em uma aplicação desenvolvida em **ReactJS** que permite ao usuário gerenciar uma lista de séries.
-
-A aplicação possui funcionalidades para:
-
-*  Cadastrar novas séries
-*  Listar todas as séries cadastradas
-*  Editar informações de séries existentes
-*  Excluir séries
-
-O objetivo do projeto é demonstrar o uso de:
-
-* **React Router** para navegação entre páginas
-* **useState** para gerenciamento de estado
-* **localStorage** para persistência simples de dados no navegador
+- **Student:** Theo Phonlor Perez  
+- **Project:** Phase 1 - Series Registration and Management  
+- **Course:** Frontend Development  
 
 ---
 
-#  Como executar o projeto
+##  Introduction
 
-###  Descompactar o arquivo
+This project is a **ReactJS** application that allows users to manage a list of series.
 
-Extraia o arquivo entregue:
+###  Features
+
+-  Add new series  
+-  List all registered series  
+-  Edit existing series information  
+-  Delete series  
+
+---
+
+##  Technologies Used
+
+- **ReactJS**  
+- **React Router** – navigation between pages  
+- **useState** – state management  
+- **localStorage** – simple data persistence in the browser  
+
+---
+
+#  How to Run the Project
+
+###  Extract the File
+
+Extract the provided file:
 
 ```
 theo_phonlor_perez-projeto-fase-1.zip
@@ -39,17 +42,16 @@ theo_phonlor_perez-projeto-fase-1.zip
 
 ---
 
-###  Acessar a pasta do projeto
+###  Access the Project Folder
 
-Abra o terminal na pasta onde o projeto foi extraído e execute:
-
+Open the terminal in the folder where the project was extracted and run:
 ```bash
 cd theo_phonlor_perez-projeto-fase-1
 ```
 
 ---
 
-###  Instalar as dependências
+###  Install dependencies
 
 ```bash
 npm install
@@ -57,7 +59,7 @@ npm install
 
 ---
 
-###  Iniciar a aplicação
+###  Start the application
 
 ```bash
 npm start
@@ -65,86 +67,86 @@ npm start
 
 ---
 
-###  Acessar no navegador
+###  Open in the browser
 
-Após iniciar o projeto, a aplicação abrirá automaticamente em:
+After starting the project, the application will automatically open at:
 
 ```
 http://localhost:3000
 ```
 
-Para funcionar deve ser aberta na porta 3000 !!
+The application must run on port 3000 to work properly!!
 
 ---
 
-#  Estrutura de Componentes
+#  Component structure
 
-Os componentes da aplicação estão localizados em:
+The application components are located in:
 
 ```
 ./src/components
 ```
 
-Eles são responsáveis por estruturar a interface e organizar as funcionalidades.
+They are responsible for structuring the interface and organizing the functionalities.
 
 ---
 
 ##  NavBar
 
-Componente responsável pela navegação entre as páginas da aplicação.
+Component responsible for navigation between application pages.
 
-Utiliza **React Router** para gerenciar as rotas.
+Uses **React Router** to manage routes.
 
-Links disponíveis:
+### Available links:
 
-*  Home
-*  Sobre
-*  Cadastro de Séries
-*  Lista de Séries
+- Home  
+- About  
+- Series Registration  
+- Series List  
 
 ---
 
 ##  SerieForm
 
-Componente responsável pelo **cadastro de novas séries**.
+Component responsible for **registering new series**.
 
-### Campos do formulário
+###  Form Fields
 
-* Título
-* Número de Temporadas
-* Data de Lançamento
-* Diretor
-* Produtora
-* Categoria
-* Data em que o usuário assistiu
+- Title  
+- Number of Seasons  
+- Release Date  
+- Director  
+- Production Company  
+- Category  
+- Date watched by the user  
 
-Todos os campos são obrigatórios.
+All fields are required.
 
-Ao enviar o formulário, a função **`adicionarSerie`** é chamada para salvar a nova série.
+When submitting the form, the **`adicionarSerie`** function is called to save the new series.
 
 ---
 
 ##  SerieList
 
-Componente responsável por **listar todas as séries cadastradas**.
+Component responsible for **listing all registered series**.
 
-Cada série é exibida em formato de **card**, contendo suas informações.
+Each series is displayed in a **card format**, containing its information.
 
-### Funcionalidades disponíveis
+###  Available Features
 
-*  **Editar série**
+-  **Edit series**
 
-  Ao clicar em editar, são exibidos **prompts** permitindo alterar todos os campos da série.
+  When clicking "editar", **prompts** are displayed allowing all series fields to be modified.
 
-*  **Excluir série**
+-  **Delete series**
 
-  Remove a série da lista e atualiza o armazenamento no **localStorage**.
+  Removes the series from the list clicking "excluir" and updates the storage in **localStorage**.
 
 ---
 
-#  Páginas da Aplicação
+#  Application Pages
 
-As páginas estão localizadas em:
+The pages are located in:
 
 ```
 ./src/pages
@@ -154,56 +156,55 @@ As páginas estão localizadas em:
 
 ##  Home
 
-Página inicial da aplicação.
+Home page of the application.
 
-Exibe uma mensagem de boas-vindas ao usuário e apresenta o objetivo do sistema.
-
----
-
-##  Sobre
-
-Página informativa contendo uma descrição do projeto e sua finalidade dentro da disciplina.
+Displays a welcome message to the user and presents the purpose of the system.
 
 ---
 
-#  Falando da Estilização
+##  About
 
-A estilização da aplicação foi realizada utilizando **arquivos CSS separados para cada componente**.
-
-
-Responsável por:
-
-* Layout dos cards das séries
-* Estilo dos botões
-* Organização da listagem
+Informational page named "sobre", containing a description of the project and its purpose within the course.
 
 ---
 
-#  Imagens da Aplicação
+#  Styling
 
-###  Página Inicial
+The application's styling was implemented using **separate CSS files for each component**.
+
+Responsible for:
+
+- Layout of the series cards  
+- Button styling  
+- Organization of the listing 
+
+---
+
+#  Application images
+
+###  Home
 
 
 ![Página Home](home.png)
 
-###  Página Sobre
+###  About - "sobre"
 
 
 ![Página Sobre](sobre.png)
 
 
-###  Página de Cadastro
+###  Registration page - "Cadastrar"
 
 
 ![Página Cadastro](form.png)
 
 
-###  Página de Listagem
+###  List page - "Séries"
 
 
 ![Página Lista](serielistt.png)
 
-### Mostrando funcionalidade da edição
+### Showing editing functionality
 
 
 ![Tela de edição](edit.png)
@@ -211,22 +212,22 @@ Responsável por:
 
 ---
 
-#  Conclusão
+# Conclusion
 
-Este projeto representa a **Fase 1** do desenvolvimento da aplicação.
+This project represents **Phase 1** of the application development.
 
-Durante esta etapa foram implementados os seguintes conceitos:
+During this stage, the following concepts were implemented:
 
-*  Estruturação de layout com **componentes React**
-*  Navegação entre páginas utilizando **React Router**
-*  Persistência simples de dados utilizando **localStorage**
-* Gerenciamento de estado utilizando o hook **useState**
+* Layout structuring with **React components**
+* Page navigation using **React Router**
+* Simple data persistence using **localStorage**
+* State management with the **useState** hook
 
-A aplicação serve como base para evoluções futuras, podendo incluir melhorias como:
+The application serves as a foundation for future evolutions, which may include improvements such as:
 
-* Interface mais avançada
-* Banco de dados
-* Autenticação de usuários
-* Integração com APIs
+* More advanced interface
+* Database integration
+* User authentication
+* API integration
 
 ---
